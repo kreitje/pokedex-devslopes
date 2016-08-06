@@ -12,6 +12,9 @@
 		1EB4DB181D5686860059E029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB4DB161D5686860059E029 /* Main.storyboard */; };
 		1EB4DB1A1D5686860059E029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB4DB191D5686860059E029 /* Assets.xcassets */; };
 		1EB4DB1D1D5686860059E029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB4DB1B1D5686860059E029 /* LaunchScreen.storyboard */; };
+		1EB4DB251D56885D0059E029 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1EB4DB241D56885D0059E029 /* pokemon.csv */; };
+		1EB4DB281D56895A0059E029 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB4DB271D56895A0059E029 /* Pokemon.swift */; };
+		1ED389281D56922F0028FC41 /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED389271D56922F0028FC41 /* PokeCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1EB4DB191D5686860059E029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EB4DB1C1D5686860059E029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EB4DB1E1D5686860059E029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB4DB241D56885D0059E029 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		1EB4DB271D56895A0059E029 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		1ED389271D56922F0028FC41 /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		1EB4DB111D5686860059E029 /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				1EB4DB261D56894B0059E029 /* Model */,
+				1ED389261D5691FC0028FC41 /* View */,
 				1EB4DB121D5686860059E029 /* AppDelegate.swift */,
 				1EB4DB141D5686860059E029 /* ViewController.swift */,
 				1EB4DB161D5686860059E029 /* Main.storyboard */,
 				1EB4DB191D5686860059E029 /* Assets.xcassets */,
 				1EB4DB1B1D5686860059E029 /* LaunchScreen.storyboard */,
 				1EB4DB1E1D5686860059E029 /* Info.plist */,
+				1EB4DB241D56885D0059E029 /* pokemon.csv */,
 			);
 			path = pokedex;
+			sourceTree = "<group>";
+		};
+		1EB4DB261D56894B0059E029 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1EB4DB271D56895A0059E029 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1ED389261D5691FC0028FC41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1ED389271D56922F0028FC41 /* PokeCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +149,7 @@
 			files = (
 				1EB4DB1D1D5686860059E029 /* LaunchScreen.storyboard in Resources */,
 				1EB4DB1A1D5686860059E029 /* Assets.xcassets in Resources */,
+				1EB4DB251D56885D0059E029 /* pokemon.csv in Resources */,
 				1EB4DB181D5686860059E029 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED389281D56922F0028FC41 /* PokeCell.swift in Sources */,
 				1EB4DB151D5686860059E029 /* ViewController.swift in Sources */,
 				1EB4DB131D5686860059E029 /* AppDelegate.swift in Sources */,
+				1EB4DB281D56895A0059E029 /* Pokemon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +316,7 @@
 				1EB4DB231D5686860059E029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
